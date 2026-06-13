@@ -53,9 +53,8 @@ try {
     case 'match': {
       const [pattern, path] = rest;
       if (!pattern || !path) { console.error('Usage: pathmatch match <pattern> <path>'); process.exit(1); }
-      const result = match(pattern, path, opts) || matchPath(pattern, path, opts);
       const c = compile(pattern, opts);
-      const m = require('./index.js').match(c, path);
+      const m = match(c, path);
       if (!m) {
         if (json) jsonOut({ matched: false });
         else console.log('no match');
