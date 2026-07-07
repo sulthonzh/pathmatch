@@ -9,11 +9,29 @@
   "scripts": {
     "test": "node test.js"
   },
-  "keywords": ["path", "route", "match", "pattern", "url", "regex", "router", "zero-dep"],
+  "keywords": [
+    "path",
+    "route",
+    "match",
+    "pattern",
+    "url",
+    "regex",
+    "router",
+    "zero-dep"
+  ],
   "author": "Sulthon Zharif Hidayatullah",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sulthonzh/pathmatch.git"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
